@@ -32,7 +32,7 @@ app.get('*', (req, res) => {
 
 const server = http.createServer(app);
 
-server.listen(3003);
+server.listen(process.env.PORT);
 server.on('listening', () => {
   console.log('Listening on 3003');
 });
